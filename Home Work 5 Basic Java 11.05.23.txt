@@ -1,0 +1,84 @@
+'Задача 1'
+
+package Lesson5.HomeWork;
+
+public class WeekendRain {
+    public static void main(String[] args) {
+
+        boolean isWeekend = true;
+        boolean isRain = false;
+        boolean canWalk;
+
+        if (isWeekend) {
+            canWalk = true;
+            System.out.println("Мы идем гулять");
+           } else {
+            System.out.println("Сидим дома");
+        }
+    }
+}
+
+'Задача 2'
+
+package Lesson5.HomeWork;
+
+public class EdekaRewe {
+
+    public static void main(String[] args) {
+
+        boolean isEdekaOpen = false;
+        boolean isReweOpen = false;
+
+        boolean canBuy = isEdekaOpen || isReweOpen;
+        System.out.println("Я могу купить еду " + canBuy);
+
+    }
+}
+
+'Задача 3'
+
+package Lesson5.HomeWork;
+
+public class TwoFlasks {
+    public static void main(String[] args) {
+
+        int t1 = 120;
+        int t2 = 80;
+        int tControl = 100;
+
+        boolean resultt = (t1 > tControl) && (t2 < tControl);
+            System.out.println("Прибор работает корректно " + resultt);
+
+    }
+}
+
+'Задача 4'
+
+package Lesson5.HomeWork;
+
+public class WorkDay {
+    public static void main(String[] args) {
+
+        int morning = 28800;
+        int endOfWork = 0;
+        int work = 25000;
+        int n = (work / 3600);
+
+        if (work == endOfWork || n >= 9) {
+            System.out.println("Рабочий день закончился");
+        } else if (work == morning) {
+            System.out.println("Начало рабочего дня");
+        } else if ((work >= endOfWork) && (n > 1) && (n < 5)) {
+            System.out.println("До конца рабочего дня осталось " + n + " часа");
+
+        } else if ((work >= endOfWork) && (n >= 5) && (n <= 8)) {
+            System.out.println("До конца рабочего дня осталось " + n + " часов");
+        }else if ((work >= endOfWork) && (n >= 1)) {
+            System.out.println("До конца рабочего дня остался " + n + " час");
+        }else {
+            System.out.println("До конца рабочего дня осталось меньше часа - " + work +" секунд" );
+        }
+
+    }
+
+}
